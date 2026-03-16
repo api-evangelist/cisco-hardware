@@ -1,7 +1,7 @@
 aid: cisco-hardware
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml
-name: Cisco Hardware APIs
+name: Cisco Hardware
 tags:
   - Networking
   - Hardware
