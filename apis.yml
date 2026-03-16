@@ -1,161 +1,63 @@
+aid: cisco-hardware
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml
 name: Cisco Hardware APIs
-description: A collection of APIs for managing and monitoring Cisco hardware devices, including routers, switches, and network infrastructure
-url: https://developer.cisco.com/hardware
-image: https://developer.cisco.com/images/cisco-logo.png
-created: '2024-01-15'
-modified: '2024-01-15'
 tags:
-- networking
-- hardware
-- infrastructure
-- routers
-- switches
-- cisco
+  - Networking
+  - Hardware
+  - Infrastructure
+  - Routers
+  - Switches
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2024-01-15'
+modified: '2026-03-16'
+position: Consumer
+description: >-
+  A collection of APIs for managing and monitoring Cisco hardware devices,
+  including routers, switches, and network infrastructure.
 apis:
-- name: Cisco DNA Center API
-  description: API for managing and automating Cisco network infrastructure through DNA Center
-  humanURL: https://developer.cisco.com/docs/dna-center/
-  baseURL: https://dnacentersandbox.cisco.com/api
-  version: 2.3.5
-  tags:
-  - network-management
-  - automation
-  - orchestration
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/docs/dna-center/api/
-  - type: OpenAPI
-    url: https://developer.cisco.com/docs/dna-center/api/openapi.json
-  - type: Authentication
-    url: https://developer.cisco.com/docs/dna-center/authentication/
-  - type: Sandbox
-    url: https://devnetsandbox.cisco.com/
-- name: Cisco Meraki Dashboard API
-  description: RESTful API for managing Meraki cloud-managed hardware including switches, access points, and security appliances
-  humanURL: https://developer.cisco.com/meraki/
-  baseURL: https://api.meraki.com/api/v1
-  version: '1.0'
-  tags:
-  - cloud-managed
-  - wireless
-  - switching
-  - security
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/meraki/api-latest/
-  - type: OpenAPI
-    url: https://api.meraki.com/api/v1/openapiSpec
-  - type: API Explorer
-    url: https://developer.cisco.com/meraki/api-latest/
-  - type: Getting Started
-    url: https://developer.cisco.com/meraki/api/#/getting-started
-- name: Cisco UCS Manager API
-  description: XML API for managing Cisco Unified Computing System (UCS) servers and blade infrastructure
-  humanURL: https://developer.cisco.com/site/ucs-dev-center/
-  baseURL: https://ucsm-server/nuova
-  version: '4.2'
-  tags:
-  - servers
-  - compute
-  - data-center
-  - ucs
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/docs/ucs-manager/
-  - type: SDK
-    url: https://github.com/CiscoUcs/ucsmsdk
-  - type: Power Tools
-    url: https://developer.cisco.com/docs/ucs-powertool/
-  - type: Community
-    url: https://community.cisco.com/t5/unified-computing-system/bd-p/discussions-ucs
-- name: Cisco IOS XE REST API
-  description: RESTCONF-based API for programmatic access to IOS XE devices including routers and switches
-  humanURL: https://developer.cisco.com/docs/ios-xe/
-  baseURL: https://{device}/restconf
-  version: 17.x
-  tags:
-  - ios-xe
-  - routers
-  - switches
-  - restconf
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/docs/ios-xe/
-  - type: YANG Models
-    url: https://github.com/YangModels/yang/tree/main/vendor/cisco/xe
-  - type: Sandbox
-    url: https://devnetsandbox.cisco.com/RM/Topology
-  - type: Programmability Guide
-    url: https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/guide/b_prgmg_guide.html
-- name: Cisco Intersight API
-  description: Cloud-based infrastructure management API for Cisco UCS and HyperFlex systems
-  humanURL: https://intersight.com/apidocs/
-  baseURL: https://intersight.com/api/v1
-  version: '1.0'
-  tags:
-  - cloud-management
-  - ucs
-  - hyperflex
-  - infrastructure
-  properties:
-  - type: Documentation
-    url: https://intersight.com/apidocs/introduction/overview/
-  - type: OpenAPI
-    url: https://intersight.com/apidocs/downloads/
-  - type: SDK - Python
-    url: https://github.com/CiscoDevNet/intersight-python
-  - type: SDK - PowerShell
-    url: https://github.com/CiscoDevNet/intersight-powershell
-- name: Cisco APIC REST API
-  description: API for managing Cisco Application Centric Infrastructure (ACI) fabric hardware
-  humanURL: https://developer.cisco.com/docs/aci/
-  baseURL: https://apic-server/api
-  version: '5.2'
-  tags:
-  - aci
-  - data-center
-  - sdn
-  - fabric
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/docs/aci/
-  - type: API Reference
-    url: https://developer.cisco.com/docs/apic-mim-ref/
-  - type: Python SDK
-    url: https://github.com/datacenter/acitoolkit
-  - type: Learning Labs
-    url: https://developer.cisco.com/learning/tracks/aci-programmability
-- name: Cisco DCNM REST API
-  description: API for managing Cisco Data Center Network Manager and Nexus switches
-  humanURL: https://developer.cisco.com/docs/dcnm/
-  baseURL: https://dcnm-server/rest
-  version: 12.x
-  tags:
-  - data-center
-  - nexus
-  - switching
-  - vxlan
-  properties:
-  - type: Documentation
-    url: https://developer.cisco.com/docs/dcnm/
-  - type: API Guide
-    url: https://www.cisco.com/c/en/us/support/cloud-systems-management/prime-data-center-network-manager/products-programming-reference-guides-list.html
-maintainers:
-- name: Cisco DevNet
-  email: devnet-support@cisco.com
-  url: https://developer.cisco.com/
+  - aid: cisco-hardware:cisco-dna-center-api
+    name: Cisco DNA Center API
+    tags:
+      - Network Management
+      - Automation
+    humanURL: https://developer.cisco.com/docs/dna-center/
+    properties:
+      - url: https://developer.cisco.com/docs/dna-center/api/
+        type: Documentation
+      - url: https://developer.cisco.com/docs/dna-center/api/openapi.json
+        type: OpenAPI
+    description: >-
+      API for managing and automating Cisco network infrastructure through
+      DNA Center.
+  - aid: cisco-hardware:cisco-meraki-dashboard-api
+    name: Cisco Meraki Dashboard API
+    tags:
+      - Cloud Managed
+      - Wireless
+    humanURL: https://developer.cisco.com/meraki/
+    properties:
+      - url: https://developer.cisco.com/meraki/api-latest/
+        type: Documentation
+      - url: https://api.meraki.com/api/v1/openapiSpec
+        type: OpenAPI
+    description: >-
+      RESTful API for managing Meraki cloud-managed hardware including
+      switches, access points, and security appliances.
 common:
-- type: Developer Portal
-  url: https://developer.cisco.com/
-- type: Support
-  url: https://developer.cisco.com/site/support/
-- type: Community
-  url: https://community.cisco.com/
-- type: Learning Labs
-  url: https://developer.cisco.com/learning/
-- type: Sandbox
-  url: https://devnetsandbox.cisco.com/
-- type: Code Exchange
-  url: https://developer.cisco.com/codeexchange/
-- type: Terms of Service
-  url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html
+  - type: Portal
+    url: https://developer.cisco.com/
+  - type: Support
+    url: https://developer.cisco.com/site/support/
+  - type: Community
+    url: https://community.cisco.com/
+  - type: Terms of Service
+    url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html
+  - type: Privacy Policy
+    url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+specificationVersion: '0.19'
