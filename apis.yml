@@ -3,9 +3,9 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml
 name: Cisco Hardware
 tags:
-  - Networking
   - Hardware
   - Infrastructure
+  - Networking
   - Routers
   - Switches
 type: Index
@@ -21,8 +21,8 @@ apis:
   - aid: cisco-hardware:cisco-dna-center-api
     name: Cisco DNA Center API
     tags:
-      - Network Management
       - Automation
+      - Network Management
     humanURL: https://developer.cisco.com/docs/dna-center/
     properties:
       - url: https://developer.cisco.com/docs/dna-center/api/
