@@ -122,8 +122,8 @@ The UCS Manager XML API is the legacy programmatic interface for managing Cisco 
 - [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html)
 - [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
 - [JSON-LD Context](json-ld/cisco-hardware-context.jsonld)
-- [Spectral Ruleset](spectral/cisco-hardware-spectral.yml)
-- [Naftiko Capabilities](naftiko/cisco-hardware-capabilities.yml)
+- [Spectral Ruleset](rules/cisco-hardware-rules.yml)
+- [Naftiko Capabilities](capabilities/cisco-hardware-capabilities.yml)
 
 ## Maintainers
 

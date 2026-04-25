@@ -187,9 +187,9 @@ common:
   - type: JSON-LD
     url: json-ld/cisco-hardware-context.jsonld
   - type: Spectral
-    url: spectral/cisco-hardware-spectral.yml
+    url: rules/cisco-hardware-rules.yml
   - type: Naftiko Capabilities
-    url: naftiko/cisco-hardware-capabilities.yml
+    url: capabilities/cisco-hardware-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
