@@ -1,0 +1,48 @@
+capabilities:
+  - id: cisco-hardware.discover-devices
+    name: Discover network devices
+    description: >-
+      List network devices discovered by Cisco Catalyst Center, Meraki dashboard,
+      Intersight, or APIC.
+    apis:
+      - cisco-hardware:catalyst-center-api
+      - cisco-hardware:meraki-dashboard-api
+      - cisco-hardware:apic-rest-api
+      - cisco-hardware:intersight-api
+  - id: cisco-hardware.inventory-hardware
+    name: Inventory hardware assets
+    description: >-
+      Retrieve serial numbers, models, firmware versions, warranty status,
+      and lifecycle data for managed Cisco hardware.
+    apis:
+      - cisco-hardware:catalyst-center-api
+      - cisco-hardware:meraki-dashboard-api
+      - cisco-hardware:intersight-api
+      - cisco-hardware:ucs-manager-api
+  - id: cisco-hardware.configure-device
+    name: Apply device configuration
+    description: >-
+      Push configuration to routers, switches, or fabric using model-driven
+      RESTCONF or controller APIs.
+    apis:
+      - cisco-hardware:ios-xe-restconf-api
+      - cisco-hardware:catalyst-center-api
+      - cisco-hardware:apic-rest-api
+  - id: cisco-hardware.monitor-health
+    name: Monitor device health
+    description: >-
+      Read operational state, telemetry, and assurance data from managed
+      hardware.
+    apis:
+      - cisco-hardware:catalyst-center-api
+      - cisco-hardware:meraki-dashboard-api
+      - cisco-hardware:intersight-api
+  - id: cisco-hardware.manage-firmware
+    name: Manage firmware and software images
+    description: >-
+      Upload, distribute, and activate device firmware and OS images
+      across managed hardware fleets.
+    apis:
+      - cisco-hardware:catalyst-center-api
+      - cisco-hardware:intersight-api
+      - cisco-hardware:ucs-manager-api

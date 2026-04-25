@@ -1,0 +1,45 @@
+extends:
+  - spectral:oas
+  - spectral:asyncapi
+rules:
+  cisco-hardware-info-contact:
+    description: API info object MUST contain a contact for Cisco Hardware APIs.
+    severity: warn
+    given: $.info
+    then:
+      field: contact
+      function: truthy
+  cisco-hardware-https-only:
+    description: All Cisco Hardware API servers MUST use HTTPS.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://'
+  cisco-hardware-tag-required:
+    description: Operations MUST be tagged for hardware domain grouping.
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch].tags
+    then:
+      function: truthy
+  cisco-hardware-operation-id:
+    description: Operations MUST have an operationId.
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: operationId
+      function: truthy
+  cisco-hardware-summary-required:
+    description: Operations MUST have a summary.
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: summary
+      function: truthy
+  cisco-hardware-security-required:
+    description: API MUST define security schemes for token, basic-auth, or signature auth.
+    severity: error
+    given: $.components.securitySchemes
+    then:
+      function: truthy

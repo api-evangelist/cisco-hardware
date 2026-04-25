@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/cisco-hardware/",
+    "schema": "https://schema.org/",
+    "cisco": "https://developer.cisco.com/vocab/",
+    "Device": "schema:Product",
+    "Network": "cisco:Network",
+    "Site": "cisco:Site",
+    "Fabric": "cisco:Fabric",
+    "Switch": "cisco:Switch",
+    "Router": "cisco:Router",
+    "AccessPoint": "cisco:AccessPoint",
+    "Server": "cisco:Server",
+    "Tenant": "cisco:Tenant",
+    "Organization": "schema:Organization",
+    "name": "schema:name",
+    "model": "cisco:model",
+    "serial": "cisco:serialNumber",
+    "firmware": "cisco:firmwareVersion",
+    "ipAddress": "cisco:ipAddress",
+    "macAddress": "cisco:macAddress",
+    "status": "cisco:status",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}
