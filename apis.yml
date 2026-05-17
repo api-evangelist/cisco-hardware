@@ -37,7 +37,7 @@ apis:
       - url: https://developer.cisco.com/docs/dna-center/
         type: Documentation
       - url: https://developer.cisco.com/docs/dna-center/api/
-        type: API Reference
+        type: APIReference
       - url: https://devnetsandbox.cisco.com/
         type: Sandbox
     description: >-
@@ -63,7 +63,7 @@ apis:
       - url: https://api.meraki.com/api/v1/openapiSpec
         type: OpenAPI
       - url: https://developer.cisco.com/meraki/api/getting-started/
-        type: Getting Started
+        type: GettingStarted
     description: >-
       The Meraki Dashboard API is a RESTful interface for cloud-managed
       Meraki hardware including switches, wireless access points, security
@@ -109,7 +109,7 @@ apis:
       - url: https://developer.cisco.com/docs/aci/
         type: Documentation
       - url: https://developer.cisco.com/docs/apic-mim-ref/
-        type: API Reference
+        type: APIReference
       - url: https://github.com/datacenter/acitoolkit
         type: SDK
     description: >-
@@ -178,13 +178,13 @@ common:
     url: https://developer.cisco.com/site/support/
   - type: Community
     url: https://community.cisco.com/
-  - type: Status
+  - type: StatusPage
     url: https://status.cisco.com/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cisco-hardware-context.jsonld
   - type: Spectral
     url: rules/cisco-hardware-rules.yml
