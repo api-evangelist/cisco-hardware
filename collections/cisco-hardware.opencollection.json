@@ -1,0 +1,342 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Catalyst Center (DNA Center) Intent API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Authentication",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Obtain an access token (valid for 1 hour)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/system/api/v1/auth/token",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Obtain an access token (valid for 1 hour)"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Devices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get device list",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device",
+            "params": [
+              {
+                "name": "hostname",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "managementIpAddress",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "macAddress",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "family",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "serialNumber",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get device list"
+        },
+        {
+          "info": {
+            "name": "Add a device",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add a device"
+        },
+        {
+          "info": {
+            "name": "Get device by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get device by id"
+        },
+        {
+          "info": {
+            "name": "Delete device by id",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete device by id"
+        },
+        {
+          "info": {
+            "name": "Get device count",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device/count"
+          },
+          "docs": "Get device count"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Sites",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get site",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/site",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "siteId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get site"
+        },
+        {
+          "info": {
+            "name": "Create site",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/intent/api/v1/site",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create site"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Discovery",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get discoveries by range",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/discovery",
+            "params": [
+              {
+                "name": "startIndex",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "recordsToReturn",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get discoveries by range"
+        },
+        {
+          "info": {
+            "name": "Start a discovery",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/intent/api/v1/discovery",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Start a discovery"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "CommandRunner",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Run a read-only CLI command against devices",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network-device-poller/cli/read-request",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Run a read-only CLI command against devices"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Topology",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get physical topology",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/topology/physical-topology",
+            "params": [
+              {
+                "name": "nodeType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get physical topology"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Network",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get network settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network",
+            "params": [
+              {
+                "name": "siteId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get network settings"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
