@@ -27,7 +27,7 @@ apis:
       - Catalyst
       - Network Management
       - SDN
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.cisco.com/docs/dna-center/
     properties:
       - url: https://developer.cisco.com/docs/dna-center/
@@ -48,7 +48,7 @@ apis:
       - Dashboard
       - Switching
       - Wireless
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.meraki.com/api/v1
     humanURL: https://developer.cisco.com/meraki/
     properties:
@@ -71,7 +71,7 @@ apis:
       - Routers
       - Switches
       - YANG
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.cisco.com/docs/ios-xe/
     properties:
       - url: https://developer.cisco.com/docs/ios-xe/
@@ -93,7 +93,7 @@ apis:
       - Data Center
       - Fabric
       - SDN
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.cisco.com/docs/aci/
     properties:
       - url: https://developer.cisco.com/docs/aci/
@@ -114,7 +114,7 @@ apis:
       - HyperFlex
       - Infrastructure
       - UCS
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://intersight.com/api/v1
     humanURL: https://intersight.com/apidocs/
     properties:
@@ -136,7 +136,7 @@ apis:
       - Servers
       - UCS
       - XML
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.cisco.com/site/ucs-dev-center/
     properties:
       - url: https://developer.cisco.com/docs/ucs-manager/
