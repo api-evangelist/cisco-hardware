@@ -101,7 +101,7 @@ apis:
       - url: https://developer.cisco.com/docs/apic-mim-ref/
         type: APIReference
       - url: https://github.com/datacenter/acitoolkit
-        type: SDK
+        type: SDKs
     description: >-
       The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The API operates on
       the ACI Management Information Model and supports tenants, application profiles, endpoint groups, contracts, and
@@ -123,7 +123,7 @@ apis:
       - url: https://intersight.com/apidocs/downloads/
         type: OpenAPI
       - url: https://github.com/CiscoDevNet/intersight-python
-        type: SDK
+        type: SDKs
     description: >-
       The Cisco Intersight API is a cloud-based control plane for managing Cisco UCS, HyperFlex, and partner
       infrastructure. The API follows an OData v4-flavored REST style, uses HTTP signature authentication with API keys,
@@ -142,7 +142,7 @@ apis:
       - url: https://developer.cisco.com/docs/ucs-manager/
         type: Documentation
       - url: https://github.com/CiscoUcs/ucsmsdk
-        type: SDK
+        type: SDKs
     description: >-
       The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing System blade and
       rack servers. The API uses an XML over HTTPS request-response model targeting the UCS object model and provides
