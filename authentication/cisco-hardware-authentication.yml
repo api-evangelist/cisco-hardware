@@ -1,0 +1,21 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/cisco-hardware-openapi.yml
+summary:
+  types:
+  - apiKey
+  - http
+  api_key_in:
+  - header
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  sources:
+  - openapi/cisco-hardware-openapi.yml
+- name: tokenAuth
+  type: apiKey
+  in: header
+  parameter: X-Auth-Token
+  sources:
+  - openapi/cisco-hardware-openapi.yml

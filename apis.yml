@@ -148,6 +148,12 @@ apis:
       rack servers. The API uses an XML over HTTPS request-response model targeting the UCS object model and provides
       endpoints for chassis discovery, service profile association, firmware management, and policy configuration.
 common:
+  - type: VulnerabilityDisclosure
+    url: security/cisco-hardware-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cisco-hardware-domain-security.yml
+  - type: Authentication
+    url: authentication/cisco-hardware-authentication.yml
   - type: Portal
     url: https://developer.cisco.com/
   - type: Documentation
