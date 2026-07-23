@@ -1,0 +1,91 @@
+openapi: 3.1.0
+info:
+  title: Cisco Catalyst Center (DNA Center) Intent Authentication Discovery API
+  description: 'The Cisco Catalyst Center (formerly DNA Center) Intent API provides
+
+    programmatic management of Cisco enterprise network hardware, including
+
+    discovery, inventory, provisioning, assurance, software image
+
+    management, sites, and command runner. Authentication uses a basic-auth
+
+    token exchange against /dna/system/api/v1/auth/token; the returned
+
+    token is sent on subsequent requests as the X-Auth-Token header.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Cisco DevNet
+    url: https://developer.cisco.com/docs/dna-center/
+servers:
+- url: https://{controllerHost}
+  variables:
+    controllerHost:
+      default: sandboxdnac.cisco.com
+      description: Host of the Catalyst Center controller
+security:
+- tokenAuth: []
+tags:
+- name: Discovery
+paths:
+  /dna/intent/api/v1/discovery:
+    post:
+      tags:
+      - Discovery
+      summary: Start a discovery
+      operationId: startDiscovery
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                discoveryType:
+                  type: string
+                ipAddressList:
+                  type: string
+                cdpLevel:
+                  type: integer
+                lldpLevel:
+                  type: integer
+                preferredMgmtIPMethod:
+                  type: string
+                protocolOrder:
+                  type: string
+                retry:
+                  type: integer
+                timeout:
+                  type: integer
+      responses:
+        '202':
+          description: Task accepted
+    get:
+      tags:
+      - Discovery
+      summary: Get discoveries by range
+      operationId: getDiscoveriesByRange
+      parameters:
+      - in: query
+        name: startIndex
+        schema:
+          type: integer
+      - in: query
+        name: recordsToReturn
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Discoveries
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: X-Auth-Token

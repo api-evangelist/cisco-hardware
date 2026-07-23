@@ -1,0 +1,220 @@
+openapi: 3.1.0
+info:
+  title: Cisco Catalyst Center (DNA Center) Intent Authentication Devices API
+  description: 'The Cisco Catalyst Center (formerly DNA Center) Intent API provides
+
+    programmatic management of Cisco enterprise network hardware, including
+
+    discovery, inventory, provisioning, assurance, software image
+
+    management, sites, and command runner. Authentication uses a basic-auth
+
+    token exchange against /dna/system/api/v1/auth/token; the returned
+
+    token is sent on subsequent requests as the X-Auth-Token header.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Cisco DevNet
+    url: https://developer.cisco.com/docs/dna-center/
+servers:
+- url: https://{controllerHost}
+  variables:
+    controllerHost:
+      default: sandboxdnac.cisco.com
+      description: Host of the Catalyst Center controller
+security:
+- tokenAuth: []
+tags:
+- name: Devices
+paths:
+  /dna/intent/api/v1/network-device:
+    get:
+      tags:
+      - Devices
+      summary: Get device list
+      operationId: getDeviceList
+      parameters:
+      - in: query
+        name: hostname
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: managementIpAddress
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: macAddress
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: family
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: serialNumber
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: limit
+        schema:
+          type: integer
+      - in: query
+        name: offset
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Device list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Device'
+                  version:
+                    type: string
+    post:
+      tags:
+      - Devices
+      summary: Add a device
+      operationId: addDevice
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ipAddress:
+                  type: array
+                  items:
+                    type: string
+                snmpVersion:
+                  type: string
+                snmpROCommunity:
+                  type: string
+                snmpRWCommunity:
+                  type: string
+                cliTransport:
+                  type: string
+                userName:
+                  type: string
+                password:
+                  type: string
+                enablePassword:
+                  type: string
+      responses:
+        '202':
+          description: Task accepted
+  /dna/intent/api/v1/network-device/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Devices
+      summary: Get device by id
+      operationId: getDeviceById
+      responses:
+        '200':
+          description: A device
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    $ref: '#/components/schemas/Device'
+    delete:
+      tags:
+      - Devices
+      summary: Delete device by id
+      operationId: deleteDeviceById
+      responses:
+        '202':
+          description: Task accepted
+  /dna/intent/api/v1/network-device/count:
+    get:
+      tags:
+      - Devices
+      summary: Get device count
+      operationId: getDeviceCount
+      responses:
+        '200':
+          description: Count
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: integer
+                  version:
+                    type: string
+components:
+  schemas:
+    Device:
+      type: object
+      properties:
+        id:
+          type: string
+        hostname:
+          type: string
+        managementIpAddress:
+          type: string
+        macAddress:
+          type: string
+        platformId:
+          type: string
+        family:
+          type: string
+        type:
+          type: string
+        series:
+          type: string
+        softwareType:
+          type: string
+        softwareVersion:
+          type: string
+        serialNumber:
+          type: string
+        upTime:
+          type: string
+        lastUpdateTime:
+          type: integer
+        location:
+          type: string
+        reachabilityStatus:
+          type: string
+        role:
+          type: string
+        snmpContact:
+          type: string
+        snmpLocation:
+          type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: X-Auth-Token

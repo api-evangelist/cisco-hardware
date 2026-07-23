@@ -1,0 +1,54 @@
+openapi: 3.1.0
+info:
+  title: Cisco Catalyst Center (DNA Center) Intent Authentication Network API
+  description: 'The Cisco Catalyst Center (formerly DNA Center) Intent API provides
+
+    programmatic management of Cisco enterprise network hardware, including
+
+    discovery, inventory, provisioning, assurance, software image
+
+    management, sites, and command runner. Authentication uses a basic-auth
+
+    token exchange against /dna/system/api/v1/auth/token; the returned
+
+    token is sent on subsequent requests as the X-Auth-Token header.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Cisco DevNet
+    url: https://developer.cisco.com/docs/dna-center/
+servers:
+- url: https://{controllerHost}
+  variables:
+    controllerHost:
+      default: sandboxdnac.cisco.com
+      description: Host of the Catalyst Center controller
+security:
+- tokenAuth: []
+tags:
+- name: Network
+paths:
+  /dna/intent/api/v1/network:
+    get:
+      tags:
+      - Network
+      summary: Get network settings
+      operationId: getNetwork
+      parameters:
+      - in: query
+        name: siteId
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Network settings
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
