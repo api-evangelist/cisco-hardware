@@ -1,0 +1,26 @@
+{
+  "provider": "cisco-hardware",
+  "sources": [
+    "cisco-hardware-authentication-api-openapi.yml",
+    "cisco-hardware-commandrunner-api-openapi.yml",
+    "cisco-hardware-devices-api-openapi.yml",
+    "cisco-hardware-discovery-api-openapi.yml",
+    "cisco-hardware-network-api-openapi.yml",
+    "cisco-hardware-sites-api-openapi.yml",
+    "cisco-hardware-topology-api-openapi.yml"
+  ],
+  "outputs": [
+    "cisco-hardware-authentication-api-openapi.yml",
+    "cisco-hardware-commandrunner-api-openapi.yml",
+    "cisco-hardware-devices-api-openapi.yml",
+    "cisco-hardware-discovery-api-openapi.yml",
+    "cisco-hardware-network-api-openapi.yml",
+    "cisco-hardware-sites-api-openapi.yml",
+    "cisco-hardware-topology-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
