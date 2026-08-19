@@ -1,0 +1,302 @@
+{
+  "item": [
+    {
+      "id": "ce14dc3a-39b8-4bf9-a003-e42ab9862821",
+      "name": "Sites",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6c24b911-fa3d-4895-8c14-436683b8592b",
+          "name": "Get site",
+          "request": {
+            "name": "Get site",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "site"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "siteId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "type",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "56942a4c-b1f5-4988-9206-f18ea1a04909",
+              "name": "Sites",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "site"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "siteId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bb04f71e-b224-4797-bba6-4a1df2917455",
+          "name": "Create site",
+          "request": {
+            "name": "Create site",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "site"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"<string>\",\n  \"site\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "ceb94ac5-5bb9-44e6-8d08-1f1fe15e2a8b",
+              "name": "Task accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "site"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"type\": \"<string>\",\n  \"site\": \"<object>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Accepted",
+              "code": 202,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Host of the Catalyst Center controller",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "sandboxdnac.cisco.com",
+      "key": "controllerHost"
+    },
+    {
+      "type": "string",
+      "value": "https://{{controllerHost}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "ec846693-5a93-4859-bfcc-40e285e36938",
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Sites API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Cisco Catalyst Center (formerly DNA Center) Intent API provides\nprogrammatic management of Cisco enterprise network hardware, including\ndiscovery, inventory, provisioning, assurance, software image\nmanagement, sites, and command runner. Authentication uses a basic-auth\ntoken exchange against /dna/system/api/v1/auth/token; the returned\ntoken is sent on subsequent requests as the X-Auth-Token header.\n\n\nContact Support:\n Name: Cisco DevNet",
+      "type": "text/plain"
+    }
+  }
+}

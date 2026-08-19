@@ -1,0 +1,172 @@
+{
+  "item": [
+    {
+      "id": "ee5943a8-9dbf-4a81-9d75-5fbc09ea5da2",
+      "name": "CommandRunner",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "670f55d1-d793-468e-8ca3-ce022a2cfc20",
+          "name": "Run a read-only CLI command against devices",
+          "request": {
+            "name": "Run a read-only CLI command against devices",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device-poller",
+                "cli",
+                "read-request"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"commands\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"deviceUuids\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\",\n  \"name\": \"<string>\",\n  \"timeout\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "78155591-dff2-4a71-b548-5cc2f39c42ba",
+              "name": "Task accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device-poller",
+                    "cli",
+                    "read-request"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"commands\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"deviceUuids\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"description\": \"<string>\",\n  \"name\": \"<string>\",\n  \"timeout\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Accepted",
+              "code": 202,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Host of the Catalyst Center controller",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "sandboxdnac.cisco.com",
+      "key": "controllerHost"
+    },
+    {
+      "type": "string",
+      "value": "https://{{controllerHost}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "f977787b-7b00-4108-b3d5-a2fbf9ebdfbc",
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication CommandRunner API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Cisco Catalyst Center (formerly DNA Center) Intent API provides\nprogrammatic management of Cisco enterprise network hardware, including\ndiscovery, inventory, provisioning, assurance, software image\nmanagement, sites, and command runner. Authentication uses a basic-auth\ntoken exchange against /dna/system/api/v1/auth/token; the returned\ntoken is sent on subsequent requests as the X-Auth-Token header.\n\n\nContact Support:\n Name: Cisco DevNet",
+      "type": "text/plain"
+    }
+  }
+}

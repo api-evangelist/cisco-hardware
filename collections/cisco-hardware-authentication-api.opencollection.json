@@ -1,0 +1,42 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Authentication",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Obtain an access token (valid for 1 hour)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/system/api/v1/auth/token",
+            "auth": {
+              "type": "basic",
+              "username": "{{username}}",
+              "password": "{{password}}"
+            }
+          },
+          "docs": "Obtain an access token (valid for 1 hour)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,158 @@
+{
+  "item": [
+    {
+      "id": "e4ae6ea3-c8c5-4d2a-822d-500798d0ce03",
+      "name": "Topology",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3f47c758-c2f4-40a4-b83c-3fe60185446f",
+          "name": "Get physical topology",
+          "request": {
+            "name": "Get physical topology",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "topology",
+                "physical-topology"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "nodeType",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2ffe3875-d0c3-4d25-ab7d-7e30e91ccbe4",
+              "name": "Physical topology",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "topology",
+                    "physical-topology"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "nodeType",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Host of the Catalyst Center controller",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "sandboxdnac.cisco.com",
+      "key": "controllerHost"
+    },
+    {
+      "type": "string",
+      "value": "https://{{controllerHost}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "87d9b2b0-5e1c-4032-9a0c-5ee7a87ebda5",
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Topology API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Cisco Catalyst Center (formerly DNA Center) Intent API provides\nprogrammatic management of Cisco enterprise network hardware, including\ndiscovery, inventory, provisioning, assurance, software image\nmanagement, sites, and command runner. Authentication uses a basic-auth\ntoken exchange against /dna/system/api/v1/auth/token; the returned\ntoken is sent on subsequent requests as the X-Auth-Token header.\n\n\nContact Support:\n Name: Cisco DevNet",
+      "type": "text/plain"
+    }
+  }
+}

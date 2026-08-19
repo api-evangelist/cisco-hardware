@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Discovery API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Discovery",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get discoveries by range",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/discovery",
+            "params": [
+              {
+                "name": "startIndex",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "recordsToReturn",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get discoveries by range"
+        },
+        {
+          "info": {
+            "name": "Start a discovery",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{controllerHost}/dna/intent/api/v1/discovery",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Start a discovery"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

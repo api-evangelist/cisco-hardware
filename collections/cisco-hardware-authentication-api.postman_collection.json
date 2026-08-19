@@ -1,0 +1,220 @@
+{
+  "item": [
+    {
+      "id": "a1fef983-5ffd-45c1-8ea6-01dd0444f07f",
+      "name": "Authentication",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8ad9df9e-1111-46c7-8e70-8a0477eed6d9",
+          "name": "Obtain an access token (valid for 1 hour)",
+          "request": {
+            "name": "Obtain an access token (valid for 1 hour)",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "system",
+                "api",
+                "v1",
+                "auth",
+                "token"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{basicAuthUsername}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{basicAuthPassword}}"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "7546a515-786e-4537-a77b-3b93763382f6",
+              "name": "Authentication token",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "system",
+                    "api",
+                    "v1",
+                    "auth",
+                    "token"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"Token\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "f2d8600e-28d7-4fbb-9d9f-7361940f5cad",
+              "name": "Invalid credentials",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "system",
+                    "api",
+                    "v1",
+                    "auth",
+                    "token"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Host of the Catalyst Center controller",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "sandboxdnac.cisco.com",
+      "key": "controllerHost"
+    },
+    {
+      "type": "string",
+      "value": "https://{{controllerHost}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "68a32a84-fbad-4f7e-a032-52779a8f8a1f",
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Cisco Catalyst Center (formerly DNA Center) Intent API provides\nprogrammatic management of Cisco enterprise network hardware, including\ndiscovery, inventory, provisioning, assurance, software image\nmanagement, sites, and command runner. Authentication uses a basic-auth\ntoken exchange against /dna/system/api/v1/auth/token; the returned\ntoken is sent on subsequent requests as the X-Auth-Token header.\n\n\nContact Support:\n Name: Cisco DevNet",
+      "type": "text/plain"
+    }
+  }
+}

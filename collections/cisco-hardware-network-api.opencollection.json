@@ -1,0 +1,44 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Network API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Network",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get network settings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/network",
+            "params": [
+              {
+                "name": "siteId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get network settings"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

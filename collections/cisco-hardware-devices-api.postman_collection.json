@@ -1,0 +1,690 @@
+{
+  "item": [
+    {
+      "id": "9c821a31-49eb-4798-919f-14ae0a718486",
+      "name": "Devices",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a2ecb2ea-854e-49d2-9504-12c3967d5f91",
+          "name": "Get device list",
+          "request": {
+            "name": "Get device list",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "hostname",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "hostname",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "managementIpAddress",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "managementIpAddress",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "macAddress",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "macAddress",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "family",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "family",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serialNumber",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "serialNumber",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "limit",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4600539c-ff4e-4e88-8559-90d1eb611fe7",
+              "name": "Device list",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "hostname",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "hostname",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "managementIpAddress",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "managementIpAddress",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "macAddress",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "macAddress",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "family",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "family",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serialNumber",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "serialNumber",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"response\": [\n    {\n      \"id\": \"string\",\n      \"hostname\": \"string\",\n      \"managementIpAddress\": \"string\",\n      \"macAddress\": \"string\",\n      \"platformId\": \"string\",\n      \"family\": \"string\",\n      \"type\": \"string\",\n      \"series\": \"string\",\n      \"softwareType\": \"string\",\n      \"softwareVersion\": \"string\",\n      \"serialNumber\": \"string\",\n      \"upTime\": \"string\",\n      \"lastUpdateTime\": 7535,\n      \"location\": \"string\",\n      \"reachabilityStatus\": \"string\",\n      \"role\": \"string\",\n      \"snmpContact\": \"string\",\n      \"snmpLocation\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"hostname\": \"string\",\n      \"managementIpAddress\": \"string\",\n      \"macAddress\": \"string\",\n      \"platformId\": \"string\",\n      \"family\": \"string\",\n      \"type\": \"string\",\n      \"series\": \"string\",\n      \"softwareType\": \"string\",\n      \"softwareVersion\": \"string\",\n      \"serialNumber\": \"string\",\n      \"upTime\": \"string\",\n      \"lastUpdateTime\": 5000,\n      \"location\": \"string\",\n      \"reachabilityStatus\": \"string\",\n      \"role\": \"string\",\n      \"snmpContact\": \"string\",\n      \"snmpLocation\": \"string\"\n    }\n  ],\n  \"version\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "87d05956-05f8-45cf-876e-c29371bc098c",
+          "name": "Add a device",
+          "request": {
+            "name": "Add a device",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ipAddress\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"snmpVersion\": \"<string>\",\n  \"snmpROCommunity\": \"<string>\",\n  \"snmpRWCommunity\": \"<string>\",\n  \"cliTransport\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"password\": \"<string>\",\n  \"enablePassword\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "17022793-cf16-4c47-91e8-f940393eba8a",
+              "name": "Task accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ipAddress\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"snmpVersion\": \"<string>\",\n  \"snmpROCommunity\": \"<string>\",\n  \"snmpRWCommunity\": \"<string>\",\n  \"cliTransport\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"password\": \"<string>\",\n  \"enablePassword\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Accepted",
+              "code": 202,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "4d5f2065-8a5d-477c-89da-708ca756f513",
+          "name": "Get device by id",
+          "request": {
+            "name": "Get device by id",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c1f39893-9f73-4199-8e37-a24b508594bf",
+              "name": "A device",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"response\": {\n    \"id\": \"string\",\n    \"hostname\": \"string\",\n    \"managementIpAddress\": \"string\",\n    \"macAddress\": \"string\",\n    \"platformId\": \"string\",\n    \"family\": \"string\",\n    \"type\": \"string\",\n    \"series\": \"string\",\n    \"softwareType\": \"string\",\n    \"softwareVersion\": \"string\",\n    \"serialNumber\": \"string\",\n    \"upTime\": \"string\",\n    \"lastUpdateTime\": 7661,\n    \"location\": \"string\",\n    \"reachabilityStatus\": \"string\",\n    \"role\": \"string\",\n    \"snmpContact\": \"string\",\n    \"snmpLocation\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "afa155e5-fe7c-4087-82f0-0babfd68fbfd",
+          "name": "Delete device by id",
+          "request": {
+            "name": "Delete device by id",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "890de917-b50e-43ba-9dc1-f9782a133498",
+              "name": "Task accepted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Accepted",
+              "code": 202,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f6dfe22f-3601-477b-b1b6-64a7fc65ec6c",
+          "name": "Get device count",
+          "request": {
+            "name": "Get device count",
+            "description": {},
+            "url": {
+              "path": [
+                "dna",
+                "intent",
+                "api",
+                "v1",
+                "network-device",
+                "count"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Host of the Catalyst Center controller",
+                  "type": "any",
+                  "value": "{{controllerHost}}",
+                  "key": "controllerHost"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "894df9fb-3b47-4592-bcb8-a0c68c8f7214",
+              "name": "Count",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "dna",
+                    "intent",
+                    "api",
+                    "v1",
+                    "network-device",
+                    "count"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Host of the Catalyst Center controller",
+                      "type": "any",
+                      "value": "{{controllerHost}}",
+                      "key": "controllerHost"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"response\": 4086,\n  \"version\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Host of the Catalyst Center controller",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "sandboxdnac.cisco.com",
+      "key": "controllerHost"
+    },
+    {
+      "type": "string",
+      "value": "https://{{controllerHost}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5a682727-2112-48e0-ba0d-d57fe5b82e98",
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Devices API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Cisco Catalyst Center (formerly DNA Center) Intent API provides\nprogrammatic management of Cisco enterprise network hardware, including\ndiscovery, inventory, provisioning, assurance, software image\nmanagement, sites, and command runner. Authentication uses a basic-auth\ntoken exchange against /dna/system/api/v1/auth/token; the returned\ntoken is sent on subsequent requests as the X-Auth-Token header.\n\n\nContact Support:\n Name: Cisco DevNet",
+      "type": "text/plain"
+    }
+  }
+}

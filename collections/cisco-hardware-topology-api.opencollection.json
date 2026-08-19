@@ -1,0 +1,44 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Catalyst Center (DNA Center) Intent Authentication Topology API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Topology",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get physical topology",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{controllerHost}/dna/intent/api/v1/topology/physical-topology",
+            "params": [
+              {
+                "name": "nodeType",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get physical topology"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
