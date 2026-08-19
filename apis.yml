@@ -16,23 +16,23 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cisco-hard
 name: Cisco Hardware
 url: https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-23'
+modified: '2026-08-19'
 type: Index
 access: 3rd-Party
 position: Consumer
 specificationVersion: '0.23'
 tags:
-  - Hardware
-  - Infrastructure
-  - Networking
-  - Routers
-  - Switches
-description: >-
-  Cisco Hardware is an aggregated index of programmable interfaces for managing Cisco network and data center hardware,
-  including routers, switches, wireless access points, data center fabric, and unified computing systems. The index
-  covers Cisco Catalyst Center (formerly DNA Center), Meraki cloud-managed devices, IOS XE RESTCONF, ACI APIC, UCS
-  Manager, and Intersight cloud infrastructure management. Cisco hardware APIs are exposed through Cisco DevNet, with
-  sandboxes available for developers to test integrations against live hardware without owning physical devices.
+- Hardware
+- Infrastructure
+- Networking
+- Routers
+- Switches
+description: Cisco Hardware is an aggregated index of programmable interfaces for managing Cisco network and data
+  center hardware, including routers, switches, wireless access points, data center fabric, and unified computing
+  systems. The index covers Cisco Catalyst Center (formerly DNA Center), Meraki cloud-managed devices, IOS XE RESTCONF,
+  ACI APIC, UCS Manager, and Intersight cloud infrastructure management. Cisco hardware APIs are exposed through
+  Cisco DevNet, with sandboxes available for developers to test integrations against live hardware without owning
+  physical devices.
 apis:
 - aid: cisco-hardware:catalyst-center-api
   name: Cisco Catalyst Center API
@@ -50,11 +50,10 @@ apis:
     type: APIReference
   - url: https://devnetsandbox.cisco.com/
     type: Sandbox
-  description: >-
-    The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco
-    enterprise network infrastructure, including discovery, inventory, provisioning, assurance, software
-    image management, and policy. Authentication uses a basic-auth token exchange that returns a session
-    token used as the X-Auth-Token header for subsequent calls. Responses are JSON.
+  description: The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco
+    enterprise network infrastructure, including discovery, inventory, provisioning, assurance, software image management,
+    and policy. Authentication uses a basic-auth token exchange that returns a session token used as the X-Auth-Token
+    header for subsequent calls. Responses are JSON.
 - aid: cisco-hardware:ios-xe-restconf-api
   name: Cisco IOS XE RESTCONF API
   tags:
@@ -72,11 +71,10 @@ apis:
     type: YANG Models
   - url: https://devnetsandbox.cisco.com/RM/Topology
     type: Sandbox
-  description: >-
-    The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven
-    RESTCONF interface that maps directly onto YANG data models. Operations include retrieving device
-    configuration, applying configuration changes, and reading operational state. Authentication uses
-    basic auth and payloads are negotiated as JSON or XML.
+  description: The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven
+    RESTCONF interface that maps directly onto YANG data models. Operations include retrieving device configuration,
+    applying configuration changes, and reading operational state. Authentication uses basic auth and payloads are
+    negotiated as JSON or XML.
 - aid: cisco-hardware:apic-rest-api
   name: Cisco APIC REST API
   tags:
@@ -94,11 +92,10 @@ apis:
     type: APIReference
   - url: https://github.com/datacenter/acitoolkit
     type: SDKs
-  description: >-
-    The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The API
-    operates on the ACI Management Information Model and supports tenants, application profiles, endpoint
-    groups, contracts, and fabric infrastructure. Authentication uses login endpoints that return a token
-    cookie used for subsequent object queries and configuration changes.
+  description: The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The
+    API operates on the ACI Management Information Model and supports tenants, application profiles, endpoint groups,
+    contracts, and fabric infrastructure. Authentication uses login endpoints that return a token cookie used for
+    subsequent object queries and configuration changes.
 - aid: cisco-hardware:ucs-manager-api
   name: Cisco UCS Manager API
   tags:
@@ -114,11 +111,10 @@ apis:
     type: Documentation
   - url: https://github.com/CiscoUcs/ucsmsdk
     type: SDKs
-  description: >-
-    The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing
-    System blade and rack servers. The API uses an XML over HTTPS request-response model targeting the
-    UCS object model and provides endpoints for chassis discovery, service profile association, firmware
-    management, and policy configuration.
+  description: The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing
+    System blade and rack servers. The API uses an XML over HTTPS request-response model targeting the UCS object
+    model and provides endpoints for chassis discovery, service profile association, firmware management, and policy
+    configuration.
 - aid: cisco-hardware:cisco-hardware-authentication-api
   name: Cisco Hardware Authentication API
   description: The Authentication API from Cisco Hardware — 1 operation(s) for authentication.
@@ -246,38 +242,45 @@ apis:
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
 common:
-  - type: AgenticAccess
-    url: agentic-access/cisco-hardware-agentic-access.yml
-  - type: VulnerabilityDisclosure
-    url: security/cisco-hardware-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/cisco-hardware-domain-security.yml
-  - type: Authentication
-    url: authentication/cisco-hardware-authentication.yml
-  - type: Portal
-    url: https://developer.cisco.com/
-  - type: Documentation
-    url: https://developer.cisco.com/docs/
-  - type: Sandbox
-    url: https://devnetsandbox.cisco.com/
-  - type: Code Exchange
-    url: https://developer.cisco.com/codeexchange/
-  - type: Learning
-    url: https://developer.cisco.com/learning/
-  - type: Support
-    url: https://developer.cisco.com/site/support/
-  - type: Community
-    url: https://community.cisco.com/
-  - type: StatusPage
-    url: https://status.cisco.com/
-  - type: TermsOfService
-    url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html
-  - type: PrivacyPolicy
-    url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
-  - type: JSONLD
-    url: json-ld/cisco-hardware-context.jsonld
-  - type: Spectral
-    url: rules/cisco-hardware-rules.yml
+- type: ParentCompany
+  url: https://apis.io/providers/cisco/
+  name: Cisco
+  x-relationship: product
+  x-generated-by: cisco-family:2026-08-19
+- type: AgenticAccess
+  url: agentic-access/cisco-hardware-agentic-access.yml
+- type: VulnerabilityDisclosure
+  url: security/cisco-hardware-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/cisco-hardware-domain-security.yml
+- type: Authentication
+  url: authentication/cisco-hardware-authentication.yml
+- type: Portal
+  url: https://developer.cisco.com/
+- type: Documentation
+  url: https://developer.cisco.com/docs/
+- type: Sandbox
+  url: https://devnetsandbox.cisco.com/
+- type: Code Exchange
+  url: https://developer.cisco.com/codeexchange/
+- type: Learning
+  url: https://developer.cisco.com/learning/
+- type: Support
+  url: https://developer.cisco.com/site/support/
+- type: Community
+  url: https://community.cisco.com/
+- type: StatusPage
+  url: https://status.cisco.com/
+- type: TermsOfService
+  url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html
+- type: PrivacyPolicy
+  url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
+- type: JSONLD
+  url: json-ld/cisco-hardware-context.jsonld
+- type: Spectral
+  url: rules/cisco-hardware-rules.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-parent: cisco
+x-relationship: product
