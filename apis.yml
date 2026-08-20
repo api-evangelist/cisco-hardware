@@ -25,6 +25,12 @@ tags:
 - Hardware
 - Infrastructure
 - Networking
+- Router
+- Switches
+tags_raw:
+- Hardware
+- Infrastructure
+- Networking
 - Routers
 - Switches
 description: Cisco Hardware is an aggregated index of programmable interfaces for managing Cisco network and data
@@ -59,6 +65,12 @@ apis:
   tags:
   - IOS XE
   - RESTCONF
+  - Router
+  - Switches
+  - YANG
+  tags_raw:
+  - IOS XE
+  - RESTCONF
   - Routers
   - Switches
   - YANG
@@ -80,6 +92,12 @@ apis:
   tags:
   - ACI
   - APIC
+  - Data-Center
+  - Fabric
+  - SDN
+  tags_raw:
+  - ACI
+  - APIC
   - Data Center
   - Fabric
   - SDN
@@ -99,6 +117,12 @@ apis:
 - aid: cisco-hardware:ucs-manager-api
   name: Cisco UCS Manager API
   tags:
+  - Compute
+  - Data-Center
+  - Servers
+  - UCS
+  - XML
+  tags_raw:
   - Compute
   - Data Center
   - Servers
