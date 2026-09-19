@@ -230,6 +230,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Networks
+  tags_raw:
   - Network
   properties:
   - type: OpenAPI
