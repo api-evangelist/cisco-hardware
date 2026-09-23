@@ -1,13 +1,7 @@
 {
   "provider": "cisco-hardware",
   "sources": [
-    "cisco-hardware-authentication-api-openapi.yml",
-    "cisco-hardware-commandrunner-api-openapi.yml",
-    "cisco-hardware-devices-api-openapi.yml",
-    "cisco-hardware-discovery-api-openapi.yml",
-    "cisco-hardware-network-api-openapi.yml",
-    "cisco-hardware-sites-api-openapi.yml",
-    "cisco-hardware-topology-api-openapi.yml"
+    "_original/cisco-hardware-openapi.yml"
   ],
   "outputs": [
     "cisco-hardware-authentication-api-openapi.yml",
@@ -21,6 +15,18 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "cisco-hardware-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "cisco-hardware-authentication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-commandrunner-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-devices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-discovery-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-network-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-sites-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-hardware-topology-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
