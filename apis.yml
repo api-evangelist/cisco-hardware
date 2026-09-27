@@ -105,7 +105,7 @@ apis:
   tags:
   - ACI
   - APIC
-  - Data-Center
+  - Data Center
   - Fabric
   - SDN
   tags_raw:
@@ -114,6 +114,7 @@ apis:
   - Data Center
   - Fabric
   - SDN
+  - Data-Center
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.cisco.com/docs/aci/
   properties:
@@ -131,7 +132,7 @@ apis:
   name: Cisco UCS Manager API
   tags:
   - Compute
-  - Data-Center
+  - Data Center
   - Servers
   - UCS
   - XML
@@ -141,6 +142,7 @@ apis:
   - Servers
   - UCS
   - XML
+  - Data-Center
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.cisco.com/site/ucs-dev-center/
   properties:
