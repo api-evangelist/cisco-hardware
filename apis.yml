@@ -283,6 +283,9 @@ apis:
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
 common:
+- type: CapabilityMap
+  url: capabilities/cisco-hardware-capability-edges.yml
+  name: Cisco Hardware Business Capability Map
 - type: Website
   url: https://www.cisco.com/
 - type: ParentCompany

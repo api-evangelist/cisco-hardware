@@ -1,0 +1,56 @@
+slug: cisco-hardware
+provider: Cisco Hardware
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 5
+edges:
+- tag: Devices
+  spec_file: cisco-hardware-devices-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.8
+  evidence: GET /dna/intent/api/v1/network-device  Get device list; POST ... Add a device
+  reason: Network device inventory and lifecycle on network hardware — IT infrastructure management.
+- tag: Network
+  spec_file: cisco-hardware-network-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: GET /dna/intent/api/v1/network  Get network settings
+  reason: Retrieval of network infrastructure settings; IT infrastructure (network) management.
+- tag: Topology
+  spec_file: cisco-hardware-topology-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.75
+  evidence: GET /dna/intent/api/v1/topology/physical-topology  Get physical topology
+  reason: Physical network topology visibility — IT infrastructure management.
+- tag: CommandRunner
+  spec_file: cisco-hardware-commandrunner-api-openapi.yml
+  capability_id: BC-600.40
+  capability_id_l1: BC-600
+  capability_name: IT Operations Management
+  confidence: 0.7
+  evidence: POST /dna/intent/api/v1/network-device-poller/cli/read-request  Run a read-only CLI command
+    against devices
+  reason: Executing operational CLI commands against network devices is day-to-day IT operations/automation.
+- tag: Discovery
+  spec_file: cisco-hardware-discovery-api-openapi.yml
+  capability_id: BC-600.50
+  capability_id_l1: BC-600
+  capability_name: IT Infrastructure Management
+  confidence: 0.7
+  evidence: POST /dna/intent/api/v1/discovery  Start a discovery
+  reason: Network device discovery to populate infrastructure inventory — IT infrastructure management.
