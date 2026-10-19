@@ -1,0 +1,12 @@
+{
+ "url": "https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec2.json",
+ "final": "https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec2.json",
+ "status": 200,
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 8111645,
+ "sha256": "383584b4165bc3b68fd0b54519f740f5accb75225756f585418d1e9147bb305a",
+ "fetched_at": "2026-10-19",
+ "fetched_by": "APIEvangelist-Harvest/1.0 (+https://apievangelist.com)",
+ "match": "byte-identical",
+ "note": "re-archived: the provider's current document replaced a stale archive (roadmap#793); the old files are in openapi/_superseded/2026-10-19-stale"
+}

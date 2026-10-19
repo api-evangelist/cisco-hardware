@@ -69,10 +69,11 @@ apis:
     type: APIReference
   - url: https://devnetsandbox.cisco.com/
     type: Sandbox
-  description: The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco
-    enterprise network infrastructure, including discovery, inventory, provisioning, assurance, software image management,
-    and policy. Authentication uses a basic-auth token exchange that returns a session token used as the X-Auth-Token
-    header for subsequent calls. Responses are JSON.
+  description: >-
+    The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco
+    enterprise network infrastructure, including discovery, inventory, provisioning, assurance, software
+    image management, and policy. Authentication uses a basic-auth token exchange that returns a session
+    token used as the X-Auth-Token header for subsequent calls. Responses are JSON.
 - aid: cisco-hardware:ios-xe-restconf-api
   name: Cisco IOS XE RESTCONF API
   tags:
@@ -96,10 +97,11 @@ apis:
     type: YANG Models
   - url: https://devnetsandbox.cisco.com/RM/Topology
     type: Sandbox
-  description: The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven
-    RESTCONF interface that maps directly onto YANG data models. Operations include retrieving device configuration,
-    applying configuration changes, and reading operational state. Authentication uses basic auth and payloads are
-    negotiated as JSON or XML.
+  description: >-
+    The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven
+    RESTCONF interface that maps directly onto YANG data models. Operations include retrieving device
+    configuration, applying configuration changes, and reading operational state. Authentication uses
+    basic auth and payloads are negotiated as JSON or XML.
 - aid: cisco-hardware:apic-rest-api
   name: Cisco APIC REST API
   tags:
@@ -124,10 +126,11 @@ apis:
     type: APIReference
   - url: https://github.com/datacenter/acitoolkit
     type: SDKs
-  description: The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The
-    API operates on the ACI Management Information Model and supports tenants, application profiles, endpoint groups,
-    contracts, and fabric infrastructure. Authentication uses login endpoints that return a token cookie used for
-    subsequent object queries and configuration changes.
+  description: >-
+    The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The API
+    operates on the ACI Management Information Model and supports tenants, application profiles, endpoint
+    groups, contracts, and fabric infrastructure. Authentication uses login endpoints that return a token
+    cookie used for subsequent object queries and configuration changes.
 - aid: cisco-hardware:ucs-manager-api
   name: Cisco UCS Manager API
   tags:
@@ -150,46 +153,11 @@ apis:
     type: Documentation
   - url: https://github.com/CiscoUcs/ucsmsdk
     type: SDKs
-  description: The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing
-    System blade and rack servers. The API uses an XML over HTTPS request-response model targeting the UCS object
-    model and provides endpoints for chassis discovery, service profile association, firmware management, and policy
-    configuration.
-- aid: cisco-hardware:cisco-hardware-authentication-api
-  name: Cisco Hardware Authentication API
-  description: The Authentication API from Cisco Hardware — 1 operation(s) for authentication.
-  humanURL: https://developer.cisco.com/docs/dna-center/
-  baseURL: https://api.meraki.com/api/v1
-  tags:
-  - Authentication
-  properties:
-  - type: OpenAPI
-    url: openapi/cisco-hardware-authentication-api-openapi.yml
-  - type: Documentation
-    url: https://developer.cisco.com/meraki/api-latest/
-  - type: GettingStarted
-    url: https://developer.cisco.com/meraki/api/getting-started/
-  - type: Documentation
-    url: https://intersight.com/apidocs/introduction/overview/
-  - type: SDKs
-    url: https://github.com/CiscoDevNet/intersight-python
-- aid: cisco-hardware:cisco-hardware-commandrunner-api
-  name: Cisco Hardware CommandRunner API
-  description: The CommandRunner API from Cisco Hardware — 1 operation(s) for commandrunner.
-  humanURL: https://developer.cisco.com/docs/dna-center/
-  baseURL: https://api.meraki.com/api/v1
-  tags:
-  - CommandRunner
-  properties:
-  - type: OpenAPI
-    url: openapi/cisco-hardware-commandrunner-api-openapi.yml
-  - type: Documentation
-    url: https://developer.cisco.com/meraki/api-latest/
-  - type: GettingStarted
-    url: https://developer.cisco.com/meraki/api/getting-started/
-  - type: Documentation
-    url: https://intersight.com/apidocs/introduction/overview/
-  - type: SDKs
-    url: https://github.com/CiscoDevNet/intersight-python
+  description: >-
+    The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing
+    System blade and rack servers. The API uses an XML over HTTPS request-response model targeting the
+    UCS object model and provides endpoints for chassis discovery, service profile association, firmware
+    management, and policy configuration.
 - aid: cisco-hardware:cisco-hardware-devices-api
   name: Cisco Hardware Devices API
   description: The Devices API from Cisco Hardware — 3 operation(s) for devices.
@@ -208,16 +176,16 @@ apis:
     url: https://intersight.com/apidocs/introduction/overview/
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
-- aid: cisco-hardware:cisco-hardware-discovery-api
-  name: Cisco Hardware Discovery API
-  description: The Discovery API from Cisco Hardware — 1 operation(s) for discovery.
+- aid: cisco-hardware:cisco-hardware-administered-api
+  name: Cisco Hardware Administered API
+  description: The administered API from Cisco Hardware — 4 operation(s) for administered.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
-  - Discovery
+  - administered
   properties:
   - type: OpenAPI
-    url: openapi/cisco-hardware-discovery-api-openapi.yml
+    url: openapi/cisco-hardware-administered-api-openapi.yml
   - type: Documentation
     url: https://developer.cisco.com/meraki/api-latest/
   - type: GettingStarted
@@ -226,18 +194,16 @@ apis:
     url: https://intersight.com/apidocs/introduction/overview/
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
-- aid: cisco-hardware:cisco-hardware-network-api
-  name: Cisco Hardware Network API
-  description: The Network API from Cisco Hardware — 1 operation(s) for network.
+- aid: cisco-hardware:cisco-hardware-appliance-api
+  name: Cisco Hardware Appliance API
+  description: The appliance API from Cisco Hardware — 122 operation(s) for appliance.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
-  - Networks
-  tags_raw:
-  - Network
+  - appliance
   properties:
   - type: OpenAPI
-    url: openapi/cisco-hardware-network-api-openapi.yml
+    url: openapi/cisco-hardware-appliance-api-openapi.yml
   - type: Documentation
     url: https://developer.cisco.com/meraki/api-latest/
   - type: GettingStarted
@@ -246,16 +212,16 @@ apis:
     url: https://intersight.com/apidocs/introduction/overview/
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
-- aid: cisco-hardware:cisco-hardware-sites-api
-  name: Cisco Hardware Sites API
-  description: The Sites API from Cisco Hardware — 1 operation(s) for sites.
+- aid: cisco-hardware:cisco-hardware-camera-api
+  name: Cisco Hardware Camera API
+  description: The camera API from Cisco Hardware — 29 operation(s) for camera.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
-  - Sites
+  - camera
   properties:
   - type: OpenAPI
-    url: openapi/cisco-hardware-sites-api-openapi.yml
+    url: openapi/cisco-hardware-camera-api-openapi.yml
   - type: Documentation
     url: https://developer.cisco.com/meraki/api-latest/
   - type: GettingStarted
@@ -264,16 +230,214 @@ apis:
     url: https://intersight.com/apidocs/introduction/overview/
   - type: SDKs
     url: https://github.com/CiscoDevNet/intersight-python
-- aid: cisco-hardware:cisco-hardware-topology-api
-  name: Cisco Hardware Topology API
-  description: The Topology API from Cisco Hardware — 1 operation(s) for topology.
+- aid: cisco-hardware:cisco-hardware-campusgateway-api
+  name: Cisco Hardware Campus Gateway API
+  description: The campusGateway API from Cisco Hardware — 17 operation(s) for campusgateway.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
-  - Topology
+  - campusGateway
   properties:
   - type: OpenAPI
-    url: openapi/cisco-hardware-topology-api-openapi.yml
+    url: openapi/cisco-hardware-campusgateway-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-cellulargateway-api
+  name: Cisco Hardware Cellular Gateway API
+  description: The cellularGateway API from Cisco Hardware — 16 operation(s) for cellulargateway.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - cellularGateway
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-cellulargateway-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-insight-api
+  name: Cisco Hardware Insight API
+  description: The insight API from Cisco Hardware — 4 operation(s) for insight.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - insight
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-insight-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-licensing-api
+  name: Cisco Hardware Licensing API
+  description: The licensing API from Cisco Hardware — 8 operation(s) for licensing.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - licensing
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-licensing-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-networks-api
+  name: Cisco Hardware Networks API
+  description: The networks API from Cisco Hardware — 75 operation(s) for networks.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - networks
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-networks-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-organizations-api
+  name: Cisco Hardware Organizations API
+  description: The organizations API from Cisco Hardware — 182 operation(s) for organizations.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - organizations
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-organizations-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-sensor-api
+  name: Cisco Hardware Sensor API
+  description: The sensor API from Cisco Hardware — 13 operation(s) for sensor.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - sensor
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-sensor-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-sm-api
+  name: Cisco Hardware Sm API
+  description: The sm API from Cisco Hardware — 43 operation(s) for sm.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - sm
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-sm-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-spaces-api
+  name: Cisco Hardware Spaces API
+  description: The spaces API from Cisco Hardware — 2 operation(s) for spaces.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - spaces
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-spaces-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-switch-api
+  name: Cisco Hardware Switch API
+  description: The switch API from Cisco Hardware — 56 operation(s) for switch.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - switch
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-switch-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-wireless-api
+  name: Cisco Hardware Wireless API
+  description: The wireless API from Cisco Hardware — 113 operation(s) for wireless.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - wireless
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-wireless-api-openapi.yml
+  - type: Documentation
+    url: https://developer.cisco.com/meraki/api-latest/
+  - type: GettingStarted
+    url: https://developer.cisco.com/meraki/api/getting-started/
+  - type: Documentation
+    url: https://intersight.com/apidocs/introduction/overview/
+  - type: SDKs
+    url: https://github.com/CiscoDevNet/intersight-python
+- aid: cisco-hardware:cisco-hardware-wirelesscontroller-api
+  name: Cisco Hardware Wireless Controller API
+  description: The wirelessController API from Cisco Hardware — 15 operation(s) for wirelesscontroller.
+  humanURL: https://developer.cisco.com/docs/dna-center/
+  baseURL: https://api.meraki.com/api/v1
+  tags:
+  - wirelessController
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-hardware-wirelesscontroller-api-openapi.yml
   - type: Documentation
     url: https://developer.cisco.com/meraki/api-latest/
   - type: GettingStarted

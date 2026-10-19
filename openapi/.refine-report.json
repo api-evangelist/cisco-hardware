@@ -1,32 +1,34 @@
 {
   "provider": "cisco-hardware",
   "sources": [
-    "_original/cisco-hardware-openapi.yml"
+    "_original/cisco-hardware-openapi.json"
   ],
   "outputs": [
-    "cisco-hardware-authentication-api-openapi.yml",
-    "cisco-hardware-commandrunner-api-openapi.yml",
+    "cisco-hardware-administered-api-openapi.yml",
+    "cisco-hardware-appliance-api-openapi.yml",
+    "cisco-hardware-camera-api-openapi.yml",
+    "cisco-hardware-campusgateway-api-openapi.yml",
+    "cisco-hardware-cellulargateway-api-openapi.yml",
     "cisco-hardware-devices-api-openapi.yml",
-    "cisco-hardware-discovery-api-openapi.yml",
-    "cisco-hardware-network-api-openapi.yml",
-    "cisco-hardware-sites-api-openapi.yml",
-    "cisco-hardware-topology-api-openapi.yml"
+    "cisco-hardware-insight-api-openapi.yml",
+    "cisco-hardware-licensing-api-openapi.yml",
+    "cisco-hardware-networks-api-openapi.yml",
+    "cisco-hardware-organizations-api-openapi.yml",
+    "cisco-hardware-sensor-api-openapi.yml",
+    "cisco-hardware-sm-api-openapi.yml",
+    "cisco-hardware-spaces-api-openapi.yml",
+    "cisco-hardware-switch-api-openapi.yml",
+    "cisco-hardware-wireless-api-openapi.yml",
+    "cisco-hardware-wirelesscontroller-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
     "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
-    "cisco-hardware-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "apis.yml register: already-registered"
+    "cisco-hardware-openapi.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "cisco-hardware-openapi.json: multi-axis tagging (429 tags, 16 first tags, 4.17x duplication over 1039 operations) \u2014 split on first tag, 1039 operations narrowed",
+    "apis.yml register: written (+15 apis, 20 total)"
   ],
-  "skipped": [
-    "cisco-hardware-authentication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-commandrunner-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-devices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-discovery-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-network-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-sites-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "cisco-hardware-topology-api-openapi.yml: previously refined output, superseded by openapi/_original/"
-  ]
+  "skipped": []
 }
