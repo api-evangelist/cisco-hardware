@@ -34295,3 +34295,9 @@ x-batchable-actions:
   summary: Add new broker config for wireless MQTT
   resource: /organizations/{organizationId}/wireless/mqtt/settings
   operation: update
+x-provenance:
+  method: harvested
+  publisher: Cisco Hardware
+  source: https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec2.json
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
