@@ -200,6 +200,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Appliances
+  tags_raw:
   - appliance
   properties:
   - type: OpenAPI
@@ -218,6 +220,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Camera
+  tags_raw:
   - camera
   properties:
   - type: OpenAPI
@@ -235,7 +239,8 @@ apis:
   description: The campusGateway API from Cisco Hardware — 17 operation(s) for campusgateway.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - campusGateway
   properties:
   - type: OpenAPI
@@ -253,7 +258,8 @@ apis:
   description: The cellularGateway API from Cisco Hardware — 16 operation(s) for cellulargateway.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - cellularGateway
   properties:
   - type: OpenAPI
@@ -272,6 +278,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Insight
+  tags_raw:
   - insight
   properties:
   - type: OpenAPI
@@ -290,6 +298,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Licensing
+  tags_raw:
   - licensing
   properties:
   - type: OpenAPI
@@ -308,6 +318,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Networks
+  tags_raw:
   - networks
   properties:
   - type: OpenAPI
@@ -326,6 +338,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Organization
+  tags_raw:
   - organizations
   properties:
   - type: OpenAPI
@@ -344,6 +358,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Sensor
+  tags_raw:
   - sensor
   properties:
   - type: OpenAPI
@@ -380,6 +396,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Spaces
+  tags_raw:
   - spaces
   properties:
   - type: OpenAPI
@@ -398,6 +416,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Switch
+  tags_raw:
   - switch
   properties:
   - type: OpenAPI
@@ -416,6 +436,8 @@ apis:
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
   tags:
+  - Wireless
+  tags_raw:
   - wireless
   properties:
   - type: OpenAPI
@@ -433,7 +455,8 @@ apis:
   description: The wirelessController API from Cisco Hardware — 15 operation(s) for wirelesscontroller.
   humanURL: https://developer.cisco.com/docs/dna-center/
   baseURL: https://api.meraki.com/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - wirelessController
   properties:
   - type: OpenAPI

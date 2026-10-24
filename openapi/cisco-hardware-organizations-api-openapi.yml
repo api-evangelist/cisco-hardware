@@ -34301,3 +34301,9 @@ x-provenance:
   source: https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec2.json
   note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
     stamped by stamp-openapi-provenance.py (roadmap#793)
+x-provenance:
+  method: harvested
+  publisher: Cisco Hardware
+  source: https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec2.json
+  note: split by refine-openapis from the provider's own published document, verified by fetch (openapi/_original/*.fetch.json);
+    stamped by stamp-openapi-provenance.py (roadmap#793)
