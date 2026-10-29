@@ -1,4 +1,4 @@
-# Cisco Hardware (cisco-hardware)
+# Cisco Hardware
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,175 +66,149 @@
 
 Cisco Hardware is an aggregated index of programmable interfaces for managing Cisco network and data center hardware, including routers, switches, wireless access points, data center fabric, and unified computing systems. The index covers Cisco Catalyst Center (formerly DNA Center), Meraki cloud-managed devices, IOS XE RESTCONF, ACI APIC, UCS Manager, and Intersight cloud infrastructure management. Cisco hardware APIs are exposed through Cisco DevNet, with sandboxes available for developers to test integrations against live hardware without owning physical devices.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cisco-hardware/refs/heads/main/apis.yml)
+**Areas:** Hardware · Infrastructure · Networking · Router · Switches
 
-## Scope
+## Cisco Hardware on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Cisco Hardware is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cisco-hardware/](https://apis.io/providers/cisco-hardware/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (11)
 
-- Hardware
-- Infrastructure
-- Networking
-- Routers
-- Switches
+- [Cisco Catalyst Center API](https://apis.io/apis/cisco-hardware/catalyst-center-api/) — The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco enterprise network infrastructure, including discovery,…
+- [Cisco IOS XE RESTCONF API](https://apis.io/apis/cisco-hardware/ios-xe-restconf-api/) — The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven RESTCONF interface that maps directly onto YANG…
+- [Cisco APIC REST API](https://apis.io/apis/cisco-hardware/apic-rest-api/) — The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The API operates on the ACI Management Information Model and…
+- [Cisco UCS Manager API](https://apis.io/apis/cisco-hardware/ucs-manager-api/) — The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing System blade and rack servers. The API uses an XML over…
+- [Cisco Hardware Authentication API](https://apis.io/apis/cisco-hardware/cisco-hardware-authentication-api/) — The Authentication API from Cisco Hardware — 1 operation(s) for authentication.
+- [Cisco Hardware CommandRunner API](https://apis.io/apis/cisco-hardware/cisco-hardware-commandrunner-api/) — The CommandRunner API from Cisco Hardware — 1 operation(s) for commandrunner.
+- [Cisco Hardware Devices API](https://apis.io/apis/cisco-hardware/cisco-hardware-devices-api/) — The Devices API from Cisco Hardware — 3 operation(s) for devices.
+- [Cisco Hardware Discovery API](https://apis.io/apis/cisco-hardware/cisco-hardware-discovery-api/) — The Discovery API from Cisco Hardware — 1 operation(s) for discovery.
+- [Cisco Hardware Network API](https://apis.io/apis/cisco-hardware/cisco-hardware-network-api/) — The Network API from Cisco Hardware — 1 operation(s) for network.
+- [Cisco Hardware Sites API](https://apis.io/apis/cisco-hardware/cisco-hardware-sites-api/) — The Sites API from Cisco Hardware — 1 operation(s) for sites.
+- [Cisco Hardware Topology API](https://apis.io/apis/cisco-hardware/cisco-hardware-topology-api/) — The Topology API from Cisco Hardware — 1 operation(s) for topology.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Cisco Catalyst Center API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Cisco Catalyst Center API (formerly Cisco DNA Center) provides programmatic management of Cisco enterprise network infrastructure, including discovery, inventory, provisioning, assurance, software image management, and policy. Authentication uses a basic-auth token exchange that returns a session token used as the X-Auth-Token header for subsequent calls. Responses are JSON.
+- [Cisco Hardware Agentic Access](https://apis.io/agentic-access/cisco-hardware/cisco-hardware-agentic-access/)
 
-- **Human URL:** [https://developer.cisco.com/docs/dna-center/](https://developer.cisco.com/docs/dna-center/)
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- Automation
-- Catalyst
-- Network Management
-- SDN
+- [Cisco Hardware Context](https://apis.io/jsonld/cisco-hardware/cisco-hardware-context/)
 
-#### Properties
+#### Collections (8)
 
-- [Documentation](https://developer.cisco.com/docs/dna-center/)
-- [API Reference](https://developer.cisco.com/docs/dna-center/api/)
-- [Sandbox](https://devnetsandbox.cisco.com/)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### Cisco Meraki Dashboard API
+- [Cisco Catalyst Center (DNA Center) Intent API](https://apis.io/collections/cisco-hardware/open-cisco-hardware/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-authentication-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication CommandRunner API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-commandrunner-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication Devices API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-devices-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication Discovery API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-discovery-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication Network API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-network-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication Sites API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-sites-api/)
+- [Cisco Catalyst Center (DNA Center) Intent Authentication Topology API](https://apis.io/collections/cisco-hardware/open-cisco-hardware-topology-api/)
 
-The Meraki Dashboard API is a RESTful interface for cloud-managed Meraki hardware including switches, wireless access points, security appliances, cameras, and sensors. Authentication uses an API key passed in the X-Cisco-Meraki-API-Key header. All endpoints return JSON. The API is fully versioned and an OpenAPI specification is published live at the Meraki dashboard URL.
+#### Governance rules (1)
 
-- **Human URL:** [https://developer.cisco.com/meraki/](https://developer.cisco.com/meraki/)
-- **Base URL:** `https://api.meraki.com/api/v1`
+Spectral rulesets for the provider's contracts.
 
-#### Tags
+- [Cisco Hardware API Rules](https://apis.io/rules/cisco-hardware/cisco-hardware-rules/)
 
-- Cloud Managed
-- Dashboard
-- Switching
-- Wireless
+#### Security (3)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://developer.cisco.com/meraki/api-latest/)
-- [OpenAPI](https://api.meraki.com/api/v1/openapiSpec) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Getting Started](https://developer.cisco.com/meraki/api/getting-started/)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Cisco Hardware Authentication](https://apis.io/security/cisco-hardware/cisco-hardware-authentication/)
+- [Cisco Hardware Domain Security](https://apis.io/security/cisco-hardware/cisco-hardware-domain-security/)
+- [Cisco Hardware Vulnerability Disclosure](https://apis.io/security/cisco-hardware/cisco-hardware-vulnerability-disclosure/)
 
-### Cisco IOS XE RESTCONF API
+#### Plans and pricing (1)
 
-The IOS XE RESTCONF API exposes Cisco enterprise routers and switches running IOS XE through a model-driven RESTCONF interface that maps directly onto YANG data models. Operations include retrieving device configuration, applying configuration changes, and reading operational state. Authentication uses basic auth and payloads are negotiated as JSON or XML.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://developer.cisco.com/docs/ios-xe/](https://developer.cisco.com/docs/ios-xe/)
+- [Cisco Hardware Plans Pricing](https://apis.io/plans/cisco-hardware/cisco-hardware-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- IOS XE
-- RESTCONF
-- Routers
-- Switches
-- YANG
+Published request limits.
 
-#### Properties
+- [Cisco Hardware Rate Limits](https://apis.io/rate-limits/cisco-hardware/cisco-hardware-rate-limits/)
 
-- [Documentation](https://developer.cisco.com/docs/ios-xe/)
-- [Y A N G  Models](https://github.com/YangModels/yang/tree/main/vendor/cisco/xe)
-- [Sandbox](https://devnetsandbox.cisco.com/RM/Topology)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Cisco APIC REST API
+What the API costs to run, by operation.
 
-The Cisco APIC REST API manages Application Centric Infrastructure (ACI) data center fabric. The API operates on the ACI Management Information Model and supports tenants, application profiles, endpoint groups, contracts, and fabric infrastructure. Authentication uses login endpoints that return a token cookie used for subsequent object queries and configuration changes.
+- [Cisco Hardware Finops](https://apis.io/finops/cisco-hardware/cisco-hardware-finops/)
 
-- **Human URL:** [https://developer.cisco.com/docs/aci/](https://developer.cisco.com/docs/aci/)
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- ACI
-- APIC
-- Data Center
-- Fabric
-- SDN
-
-#### Properties
-
-- [Documentation](https://developer.cisco.com/docs/aci/)
-- [API Reference](https://developer.cisco.com/docs/apic-mim-ref/)
-- [SDK](https://github.com/datacenter/acitoolkit)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Cisco Intersight API
-
-The Cisco Intersight API is a cloud-based control plane for managing Cisco UCS, HyperFlex, and partner infrastructure. The API follows an OData v4-flavored REST style, uses HTTP signature authentication with API keys, and exposes resource collections for compute, storage, networking, virtualization, and orchestration domains.
-
-- **Human URL:** [https://intersight.com/apidocs/](https://intersight.com/apidocs/)
-- **Base URL:** `https://intersight.com/api/v1`
-
-#### Tags
-
-- Cloud Management
-- HyperFlex
-- Infrastructure
-- UCS
-
-#### Properties
-
-- [Documentation](https://intersight.com/apidocs/introduction/overview/)
-- [OpenAPI](https://intersight.com/apidocs/downloads/) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [SDK](https://github.com/CiscoDevNet/intersight-python)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Cisco UCS Manager API
-
-The UCS Manager XML API is the legacy programmatic interface for managing Cisco Unified Computing System blade and rack servers. The API uses an XML over HTTPS request-response model targeting the UCS object model and provides endpoints for chassis discovery, service profile association, firmware management, and policy configuration.
-
-- **Human URL:** [https://developer.cisco.com/site/ucs-dev-center/](https://developer.cisco.com/site/ucs-dev-center/)
-
-#### Tags
-
-- Compute
-- Data Center
-- Servers
-- UCS
-- XML
-
-#### Properties
-
-- [Documentation](https://developer.cisco.com/docs/ucs-manager/)
-- [SDK](https://github.com/CiscoUcs/ucsmsdk)
-- [Postman Collection](collections/cisco-hardware.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-hardware.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Portal](https://developer.cisco.com/)
+- [Website](https://www.cisco.com/)
 - [Documentation](https://developer.cisco.com/docs/)
-- [Sandbox](https://devnetsandbox.cisco.com/)
-- [Code  Exchange](https://developer.cisco.com/codeexchange/)
-- [Learning](https://developer.cisco.com/learning/)
 - [Support](https://developer.cisco.com/site/support/)
-- [Community](https://community.cisco.com/)
-- [Status Page](https://status.cisco.com/)
-- [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html)
-- [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
-- [JSON-LD](json-ld/cisco-hardware-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Spectral Rules](rules/cisco-hardware-rules.yml) — [Spectral](https://docs.stoplight.io/docs/spectral)
+- [Terms of service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end_user_license_agreement.html)
+- [Privacy policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
+- [Status](https://status.cisco.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 45.4** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 50.2 |
+| Contract governance | 11.4 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 75.0 |
+| Access clarity | 28.9 |
+
+**Agent readiness 28.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | yes |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cisco-hardware/](https://apis.io/providers/cisco-hardware/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cisco Hardware: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cisco-hardware/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
